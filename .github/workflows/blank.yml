@@ -9,4 +9,5 @@ jobs:
     environment:
       name: test
     steps:
-      - run: echo ${{ vars.test }}
+      - run: echo "test: ${{ vars.test }}"
+      - run: echo "all_test: ${{ vars.all_test }}"
